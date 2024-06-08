@@ -15,10 +15,10 @@ io.on('connection', (socket) => {
     });
   });
 
-app.use(express.static(path.resolve("./public")));  
+app.use(express.static(path.resolve("./")));  
 
 app.get('/', (req, res) => {
-    res.sendFile("./public/index.html");
+    res.sendFile("./index.html");
   });  
 
 server.listen(3000, () => {
